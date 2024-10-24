@@ -58,8 +58,9 @@ except ModuleNotFoundError:
 
 IS_LOCAL = (not IS_BINDER) and (not IS_COLAB)
 
-def download_to_colab(chapter, branch='master'):    
-    base_url = 'https://raw.githubusercontent.com/dvgodoy/PyTorchStepByStep/{}/'.format(branch)
+def download_to_colab(chapter, branch='main'):    
+    #base_url = 'https://raw.githubusercontent.com/dvgodoy/PyTorchStepByStep/{}/'.format(branch)
+    base_url = 'https://raw.githubusercontent.com/petrashko/PyTorchStepByStep24/{}/'.format(branch)
 
     folders = FOLDERS[chapter]
     filenames = FILENAMES[chapter]
